@@ -1,0 +1,6 @@
+- Mysql defined in Dockerfile has its own *entrypoint* or *command*
+- When this Dockerfile is referenced in *devcontainer.json* the default entrypoint or command is overriden by dev container
+- So, when the dev container starts, mysql server isn't running by default
+- To make the mysql server to be running
+- 1. Option 1 - Add this *"overrideCommand": false* to *devcontainer.json*
+- 2. Option 2 - 
